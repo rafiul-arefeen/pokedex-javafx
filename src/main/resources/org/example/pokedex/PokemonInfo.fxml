@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pokedex.DetailsController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="900.0">
+         <left>
+            <VBox alignment="CENTER_LEFT" prefHeight="600.0" prefWidth="365.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="pokemonID" prefHeight="41.0" prefWidth="212.0" text="#001">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="pokemonName" prefHeight="56.0" prefWidth="329.0" text="Bulbasaur">
+                     <font>
+                        <Font name="Flexo-Demi" size="48.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="45.0" prefWidth="319.0">
+                     <children>
+                        <Label fx:id="type1" prefHeight="41.0" prefWidth="134.0" text="Grass">
+                           <font>
+                              <Font name="Flexo-Demi" size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="type2" prefHeight="41.0" prefWidth="139.0" text="Grass">
+                           <font>
+                              <Font name="Flexo-Demi" size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane hgap="5.0" prefHeight="310.0" prefWidth="701.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.36563110351562" minWidth="10.0" prefWidth="108.90312194824219" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.2203140258789" minWidth="10.0" prefWidth="231.0968780517578" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="HP" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Attack" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Defense" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Sp. Defense" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Sp. Attack" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Speed" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Generation" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Legendary" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="total" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="hp" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="attack" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="defense" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="sp_attack" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="sp_defense" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="speed" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="generation" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="legendary" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="212.0" text="Total">
+                           <font>
+                              <Font name="Flexo-Demi" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="345.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="73.0" text="&lt; Back">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Flexo-Demi" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="makeFavouriteButton" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" text="Unfavourite">
+                           <font>
+                              <Font name="Flexo-Demi" size="13.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="backgroundAnchorPane" prefHeight="200.0" prefWidth="200.0" />
+                  <ImageView fitHeight="562.0" fitWidth="484.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/pokeball_white.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="pokemonImage" fitHeight="454.0" fitWidth="430.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/pokemon/bulbasaur.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
