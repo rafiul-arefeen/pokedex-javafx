@@ -27,9 +27,10 @@ git clone https://github.com/yourusername/pokedex-javafx.git
 ```
 2. Import the project into your preferred Java IDE.
 3. Setup JavaFX.
-4. Setup a MySQL database using the provided `pokemon.csv` or `pokemon.json` file.
-5. Modify the `DatabaseController.java` file to use your specified username and password.
-6. Run `Main.java`.
+4. Download MySQL Connector and add the JAR file to project dependencies.
+5. Setup a MySQL database using the provided `pokemon.csv` or `pokemon.json` file.
+6. Modify the `DatabaseController.java` file to use your specified username and password.
+7. Run `Main.java`.
 
 ### Usage
 
